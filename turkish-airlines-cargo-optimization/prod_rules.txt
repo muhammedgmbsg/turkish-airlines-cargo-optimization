@@ -1,0 +1,16 @@
+
+
+Backend:
+
+Set-ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate
+python -m uvicorn server:app --reload --port 8000
+
+
+swagger adres:
+http://127.0.0.1:8000/docs
+
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+npm run dev
